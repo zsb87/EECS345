@@ -15,6 +15,10 @@ For this project, you should be able to fit all your code within a single file -
 The specification of this project is relatively straight forward. Remember, it's basically a chatroom that has support for private messages (PMs). For this project, we only need to implement the NU Chitter server. You can use a program such as nc or telnet as a client (more on this in the testing section below).
 
 * Your NU Chitter implementation should require a port number when starting the sever. NU Chitter will listen for connections on this port. Below is an example of starting NU Chitter in the command line.
+* By default, messages should be broadcasted to all clients. In other words, any messages that does not contain a colon should be broadcast. Furthermore, incoming messages that begin with "all:" should also be broadcast (more on commands below). For example, if a client sends any of the following messages (one per line), the body of the message should be forwarded to all clients. In the examples below, the body of each message is in bold text ("Hello, world!").
+* When messages are forwarded to other clients, they should be prefixed with the ID of the user that sent the message. In our example above, the "Hello, world!" messages from a user with an ID of 42 would appear as follows:
+* Commands: Your NU Chitter program will need to support three types of "commands" that are parsed out by the server. This includes the "all:" command, the "whoami:" command, and sending PMs. If a user sends an invalid command, you can ignore the message.
+
 ## Project 1: Kademlia DHT Part 1
 ## Project 2: Kademlia DHT Part 2
 ## Project 3: Vanish
