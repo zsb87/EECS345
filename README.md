@@ -21,7 +21,7 @@ The specification of this project is relatively straight forward. Remember, it's
 go run chitter.go 12345
 ```
 * By default, messages should be broadcasted to all clients. In other words, any messages that does not contain a colon should be broadcast. Furthermore, incoming messages that begin with "all:" should also be broadcast (more on commands below). For example, if a client sends any of the following messages (one per line), the body of the message should be forwarded to all clients. In the examples below, the body of each message is in bold text ("Hello, world!"). 
-``` go
+``` bash
 Hello, world!
 all: Hello, world!
 all : Hello, world!
