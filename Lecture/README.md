@@ -21,7 +21,7 @@ The following is our intended calendar with topics, slides (as they become avail
 References:
 * CDKB5 1,2
 * Google’s introduction to DS design
-* Fallacies of Distributed Computing|
+* Fallacies of Distributed Computing |
 |  | 3/30 | Go, Go [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/02-GoGo.pdf)] |
 | 2 | 4/4 | Networking and Internetworking I [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/03-Networking-1.pdf)] |
 | | 4/6 | Networking and Internetworking II [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/04-Networking-2.pdf)]
