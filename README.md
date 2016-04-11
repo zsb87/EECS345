@@ -17,6 +17,8 @@ For this project, you should be able to fit all your code within a single file -
 The specification of this project is relatively straight forward. Remember, it's basically a chatroom that has support for private messages (PMs). For this project, we only need to implement the NU Chitter server. You can use a program such as nc or telnet as a client (more on this in the testing section below).
 
 * Your NU Chitter implementation should require a port number when starting the sever. NU Chitter will listen for connections on this port. Below is an example of starting NU Chitter in the command line.
+```
+go run chitter.go 12345
 
 ## Project 1: Kademlia DHT Part 1
 ## Project 2: Kademlia DHT Part 2
