@@ -17,3 +17,4 @@ The following is our intended calendar with topics, slides (as they become avail
 
 | Week | Date | Topic |
 | --- | --- | --- |
+| 1 | 3/29 | Introduction | 
