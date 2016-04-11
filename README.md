@@ -53,12 +53,24 @@ The specification of this project is relatively straight forward. Remember, it's
     2: Hey, number two!
     ```
   
-  And should appear as the following on user 2's (and only user 2's) connection:
+    And should appear as the following on user 2's (and only user 2's) connection:
   
     ```
     1: Hey, number two!
     ```
   
+### DEBUGGING & TESTING
+
+To test your own NU Chitter implementation, you will want to use either netcat (nc) or telnet. Both should be able to connect to your server with your hostname and port.
+
+Additionally, a reference solution will be running on aqualab.cs.northwestern.edu on port 10345. Note that this server is only reachable from Northwestern's network. If you are trying to access it from another network, you will need to connect to Northwestern's VPN service. In order to help simplify testing, we have also implemented a "who" command on our test server. Similar to it's Unix counterpart, "who" returns a list of all the users connected to the server. You do not need to implement this function (though it should be trivial).
+
+Your program also MUST be thread safe. We will be stress testing it to make sure that there are not any incorrect behaviors. You can check for race conditions by using the following command when you test your server:
+
+``` go
+go run -race chitter.go 12345
+```
+
 ## Project 1: Kademlia DHT Part 1
 ## Project 2: Kademlia DHT Part 2
 ## Project 3: Vanish
