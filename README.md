@@ -31,9 +31,34 @@ The specification of this project is relatively straight forward. Remember, it's
   ```
 
 * When messages are forwarded to other clients, they should be prefixed with the ID of the user that sent the message. In our example above, the "Hello, world!" messages from a user with an ID of 42 would appear as follows:
+
  ```
  42: Hello, world!
  ```
+ 
+  * Commands: Your NU Chitter program will need to support three types of "commands" that are parsed out by the server. This includes the "all:" command, the "whoami:" command, and sending PMs. If a user sends an invalid command, you can ignore the message.
+  * all: - The "all:" command allows a user to explicitly broadcast a message. This also allows a user to use a colon ":" in their message. Remember that by default, if NU Chitter receives a message with one or more colons in it, everything before the first colon is interpretted as a command. Using the "all:" command allows users to have colons in their messages.
+  * whoami: - Users should be able to get their own ID number by using the whoami: command. Below is an example of user 13 asking what their ID is with the NU Chitter server responding only to that user.
+  
+  ```
+  whoami:
+  chitter: 13
+  ```
+  
+  Note that anything after a "whoami:" command can simply be ignored by the server.
+  
+  * Private messages - Users should also be able to send a message to a specific user. To do so, their message should be prefixed with the ID of the user they wish to message. Private messages to nonexistent users can just be ignored (i.e., the server does nothing). If user 1 wants to message user 2, their submitted message should be in the following format:
+
+  ```
+  2: Hey, number two!
+  ```
+  
+  And should appear as the following on user 2's (and only user 2's) connection:
+  
+  ```
+  1: Hey, number two!
+  ```
+  
 ## Project 1: Kademlia DHT Part 1
 ## Project 2: Kademlia DHT Part 2
 ## Project 3: Vanish
