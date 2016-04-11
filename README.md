@@ -71,6 +71,16 @@ Your program also MUST be thread safe. We will be stress testing it to make sure
 go run -race chitter.go 12345
 ```
 
+### SUGGESTED PLAN OF ATTACK
+
+Below is an outline of our suggest plan of attack. If you are already comfortable with Go, the following can still serve as a useful guide for the suggested order in which to implement each feature.
+
+* Write a simple echo server in Go. Make sure the server is able to handle concurrent connections (hint: use Goroutines).
+* Modify the server so that incoming messages are forwarded to all connected clients. The server will need to maintain a record of clients that are currently connected to the server. You will need to begin using Go's channels and the select statement to do so.
+* Assign unique IDs to the connected clients. Our reference implementation assigns integers (0, 1, 2, etc.), but you can assign IDs however you prefer -- just do not assign the IDs "all" and "whoami", those are reserved for commands. Once users have IDs, prefix outgoing messages with the ID of the user that sent the message.
+* Add support for the "whoami" and "all" commands. You can assume any line of text with a colon contains a command, and that all text before the colon is the command. If a user sends an invalid command, you can ignore the message. If there is no colon, it is a broadcast message. Go's "strings" package should make parsing messages from users straightforward.
+* Add support for PMs. Clients should be able to send a PM by prefacing a message with the desired user's ID and a colon (e.g., 1: <message>).
+
 ## Project 1: Kademlia DHT Part 1
 ## Project 2: Kademlia DHT Part 2
 ## Project 3: Vanish
