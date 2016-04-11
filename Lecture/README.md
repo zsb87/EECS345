@@ -17,4 +17,6 @@ The following is our intended calendar with topics, slides (as they become avail
 
 | Week | Date | Topic |
 | --- | --- | --- |
-| 1 | 3/29 | Introduction [[pdf](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/01-Introduction.pdf)] | 
+| 1 | 3/29 | Introduction [[pdf](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/01-Introduction.pdf)] |
+|  | --- | --- |
+|  | 3/30 | Go, Go [[pdf](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/02-GoGo.pdf)] |
