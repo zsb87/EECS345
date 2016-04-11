@@ -1,19 +1,17 @@
-# EECS345
-Distributed Systems - Spring 2016 - Northwestern University
-## Project 0: NU Chitter
-### SUMMARY
+# Project 0: NU Chitter
+## SUMMARY
 This is the first project for the course, which we have called "NU Chitter". It should serve as both an introduction to Go as well as a self-evaluation of proficiency in networking and systems programming. This project must be completed individually. All submissions should be 100% your own work and will be graded on a Pass/Fail scale -- either the submitted code works or it does not.
 
 NU Chitter is a very simple chat server with support for private messaging. By default, incoming messages should be broadcast to all connected clients. Incoming messages that contain a colon are considered "commands". There are a total of three commands "whoami:", "all:", and private messages. More details on these commands are provided below.
 
 Note: Your code *must* be thread safe! You should not be sharing objects across goroutines. Code that is not thread safe will be very heavily penalized (50% off). Furthermore, you *must* use channels to communicate between goroutines! Submissions that use locking mechanisms will also be very heavily penalized.
 
-### TURNING IN
+## TURNING IN
 Simply upload your code to our submission server. The site will ask you to log in with your Northwestern Net ID and password. If the page has trouble loading, please hit try again (either refresh or follow the link again).
 
 For this project, you should be able to fit all your code within a single file -- the reference implementation is relatively short (less than 150 lines of code with comments). Projects 1-3 will require more than a single file. For those, we will provide instructions on how to pack them into a submittable tar.gz file. However, for this project, just submit your single source code file named "chitter.go".
 
-### PROJECT DESCRIPTION
+## PROJECT DESCRIPTION
 The specification of this project is relatively straight forward. Remember, it's basically a chatroom that has support for private messages (PMs). For this project, we only need to implement the NU Chitter server. You can use a program such as nc or telnet as a client (more on this in the testing section below).
 
 * Your NU Chitter implementation should require a port number when starting the sever. NU Chitter will listen for connections on this port. Below is an example of starting NU Chitter in the command line.
@@ -59,7 +57,7 @@ The specification of this project is relatively straight forward. Remember, it's
     1: Hey, number two!
     ```
   
-### DEBUGGING & TESTING
+## DEBUGGING & TESTING
 
 To test your own NU Chitter implementation, you will want to use either netcat (nc) or telnet. Both should be able to connect to your server with your hostname and port.
 
@@ -71,7 +69,7 @@ Your program also MUST be thread safe. We will be stress testing it to make sure
 go run -race chitter.go 12345
 ```
 
-### SUGGESTED PLAN OF ATTACK
+## SUGGESTED PLAN OF ATTACK
 
 Below is an outline of our suggest plan of attack. If you are already comfortable with Go, the following can still serve as a useful guide for the suggested order in which to implement each feature.
 
@@ -81,6 +79,6 @@ Below is an outline of our suggest plan of attack. If you are already comfortabl
 * Add support for the "whoami" and "all" commands. You can assume any line of text with a colon contains a command, and that all text before the colon is the command. If a user sends an invalid command, you can ignore the message. If there is no colon, it is a broadcast message. Go's "strings" package should make parsing messages from users straightforward.
 * Add support for PMs. Clients should be able to send a PM by prefacing a message with the desired user's ID and a colon (e.g., 1: <message>).
 
-## Project 1: Kademlia DHT Part 1
-## Project 2: Kademlia DHT Part 2
-## Project 3: Vanish
+# Project 1: Kademlia DHT Part 1
+# Project 2: Kademlia DHT Part 2
+# Project 3: Vanish
