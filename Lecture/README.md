@@ -17,5 +17,3 @@ The following is our intended calendar with topics, slides (as they become avail
 
 | Week | Date | Topic |
 | --- | --- | --- |
-| *Still* | `renders` | **nicely** |
-| 1 | 2 | 3 |
