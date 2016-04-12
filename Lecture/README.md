@@ -22,3 +22,4 @@ The following is our intended calendar with topics, slides (as they become avail
 | 2 | 4/4 | Networking and Internetworking I [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/03-Networking-1.pdf)] |
 | | 4/6 | Networking and Internetworking II [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/04-Networking-2.pdf)] |
 | 3 | 4/11 | Communication I [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/05-RemoteInvocation.pdf)] |
+| | 4/13 | Communication II  [[PDF]()] |
