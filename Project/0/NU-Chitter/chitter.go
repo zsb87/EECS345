@@ -154,9 +154,8 @@ func (chatRoom* ChatRoom) Listen() {
 func (chatRoom* ChatRoom) isPersonalMessage(say string) bool {
     result := false
     index := 0
-    for i := 0; i < len(say); i++ {
-        if string(say[i]) == ":" {
-            index = i
+    for index = 0; index < len(say); index++ {
+        if string(say[index]) == ":" {
             break
         }
     }
@@ -176,9 +175,8 @@ func (chatRoom* ChatRoom) isPersonalMessage(say string) bool {
 
 func (chatRoom* ChatRoom) handlePersonalMessage(say string, message *Message) {
     index := 0
-    for i := 0; i < len(say); i++ {
-        if string(say[i]) == ":" {
-            index = i
+    for index = 0; index < len(say); index++ {
+        if string(say[index]) == ":" {
             break
         }
     }
@@ -199,9 +197,8 @@ func (chatRoom* ChatRoom) handlePersonalMessage(say string, message *Message) {
 
 func (chatRoom* ChatRoom) handleBroadcastMessage(say string, message *Message) {
     index := 0
-    for i := 0; i < len(say); i++ {
-        if string(say[i]) == ":" {
-            index = i
+    for index = 0; index < len(say); index++ {
+        if string(say[index]) == ":" {
             break
         }
     }
@@ -244,12 +241,17 @@ func (chatRoom* ChatRoom) buildConn(listener net.Listener) {
 
 func main() {
     chatRoom := NewChatRoom()
-    listener, err := net.Listen("tcp", os.Args[len(os.Args) - 2] + ":" + os.Args[len(os.Args) - 1])
-    if err != nil {
-        fmt.Println("\nUnable to Listen\n")
+    if len(os.Args) < 2 {
+        os.Exit(1)
+        return
     } else {
-        fmt.Println("\nListening\n")
-        chatRoom.buildConn(listener)
+        listener, err := net.Listen("tcp", os.Args[len(os.Args) - 2] + ":" + os.Args[len(os.Args) - 1])
+        if err != nil {
+            fmt.Println("\nUnable to Listen\n")
+        } else {
+            fmt.Println("\nListening\n")
+            chatRoom.buildConn(listener)
+        }    	
     }
     fmt.Println("\nYuanhui Yang\n")
 }
