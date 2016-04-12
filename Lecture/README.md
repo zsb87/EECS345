@@ -26,6 +26,7 @@ The following is our intended calendar with topics, slides (as they become avail
 | 4 | 4/18 | Overlay Networks [[PDF]()] |
 | | 4/19 | Distributed File Systems [[PDF]()] |
 | 5 | 4/25 | Distributed File Systems [[PDF]()] |
+| | 4/27 | No class |
 | 6 | 5/2 | Name Services [[PDF]()] |
 | | 5/4 | Content distribution networks [[PDF]()] |
 | 7 | 5/9 | Time and Synchronization [[PDF]()] |
@@ -34,4 +35,6 @@ The following is our intended calendar with topics, slides (as they become avail
 | | 5/18 | Coordination II [[PDF]()] |
 | 9 | 5/23 | Consensus [[PDF]()] |
 | | 5/25 | Replication and Fault Tolerance [[PDF]()] |
-| 10 | 6/1 | Mobile and Ubiquitous [[PDF]()] |
+| 10 | 5/30 | Memorial Day | 
+| | 6/1 | Mobile and Ubiquitous [[PDF]()] |
+| * | 6/6 | Final (3-5PM) |
