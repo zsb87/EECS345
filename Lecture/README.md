@@ -25,3 +25,13 @@ The following is our intended calendar with topics, slides (as they become avail
 | | 4/13 | Communication II  [[PDF]()] |
 | 4 | 4/18 | Overlay Networks [[PDF]()] |
 | | 4/19 | Distributed File Systems [[PDF]()] |
+| 5 | 4/25 | Distributed File Systems [[PDF]()] |
+| 6 | 5/2 | Name Services [[PDF]()] |
+| | 5/4 | Content distribution networks [[PDF]()] |
+| 7 | 5/9 | Time and Synchronization [[PDF]()] |
+| | 5/11 | Global State [[PDF]()] |
+| 8 | 5/16 | Coordination I [[PDF]()] |
+| | 5/18 | Coordination II [[PDF]()] |
+| 9 | 5/23 | Consensus [[PDF]()] |
+| | 5/25 | Replication and Fault Tolerance [[PDF]()] |
+| 10 | 6/1 | Mobile and Ubiquitous [[PDF]()] |
