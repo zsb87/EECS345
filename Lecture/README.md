@@ -17,13 +17,13 @@ The following is our intended calendar with topics, slides (as they become avail
 
 | Week | Date | Topic |
 | --- | --- | --- |
-| 1 | 3/29 | Introduction [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/01-Introduction.pdf)] |
-|  | 3/30 | Go, Go [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/02-GoGo.pdf)] |
-| 2 | 4/4 | Networking and Internetworking I [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/03-Networking-1.pdf)] |
-| | 4/6 | Networking and Internetworking II [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/04-Networking-2.pdf)] |
-| 3 | 4/11 | Communication I [[PDF](https://github.com/yuanhui-yang/EECS345/blob/master/Lecture/05-RemoteInvocation.pdf)] |
-| | 4/13 | Communication II  [[PDF]()] |
-| 4 | 4/18 | Overlay Networks [[PDF]()] |
+| 1 | 3/29 | Introduction [[PDF](https://github.com/yuanhui-yang/EECS345/raw/master/Lecture/01-Introduction.pdf)] |
+|  | 3/30 | Go, Go [[PDF](https://github.com/yuanhui-yang/EECS345/raw/master/Lecture/02-GoGo.pdf)] |
+| 2 | 4/4 | Networking and Internetworking I [[PDF](https://github.com/yuanhui-yang/EECS345/raw/master/Lecture/03-Networking-1.pdf)] |
+| | 4/6 | Networking and Internetworking II [[PDF](https://github.com/yuanhui-yang/EECS345/raw/master/Lecture/04-Networking-2.pdf)] |
+| 3 | 4/11 | Communication I [[PDF](https://github.com/yuanhui-yang/EECS345/raw/master/Lecture/05-RemoteInvocation.pdf)] |
+| | 4/13 | Communication II  [[PDF](https://github.com/yuanhui-yang/EECS345/raw/master/Lecture/06-IndirectComm.pdf)] |
+| 4 | 4/18 | Overlay Networks [[PDF](https://github.com/yuanhui-yang/EECS345/raw/master/Lecture/07-Overlays.pdf)] |
 | | 4/19 | Distributed File Systems [[PDF]()] |
 | 5 | 4/25 | Distributed File Systems [[PDF]()] |
 | | 4/27 | No class |
