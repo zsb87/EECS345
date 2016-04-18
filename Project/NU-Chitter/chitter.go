@@ -113,10 +113,10 @@ func (chatRoom* ChatRoom) Add(conn net.Conn) {
     chatRoom.clients = append(chatRoom.clients, client)
     go func() {
         for {
-         chatRoomInComing := ChatRoomInComing{
+            chatRoomInComing := ChatRoomInComing{
              clientId: client.id,
              clientOutComing: <-client.outgoing,
-         }
+            }
             chatRoom.incoming <- chatRoomInComing
         }
     }()
